@@ -34,9 +34,23 @@ Anchor is the equivalent for Ethereum's Truffle or Hardhat. It's a Solana framew
 cargo install --git https://github.com/project-serum/anchor anchor-cli --locked
 ```
 
+## Metaplex
+
+Metaplex is a collection of tools, smart contracts, and more designed to make the process of creating and launching NFTs easier.
+
+```bash
+git clone https://github.com/metaplex-foundation/metaplex.git ~/metaplex
+yarn install --cwd ~/metaplex/js/
+
+# check that everything has been installed properly
+npm i -g ts-node
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts --version
+```
+
 ## Usuful Commands
 ### Solana
 setup up new wallet: solana-keygen new
+set existing wallet: solana config set --keypair path_to_json_file
 check balance: solana balance --url devnet
 airdrop tokens: solana airdrop 2 {public_key} --url devnet
 
@@ -45,3 +59,14 @@ airdrop tokens: solana airdrop 2 {public_key} --url devnet
 anchor init {project_name}
 anchor build
 anchor test
+
+### Metplex
+
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts verify_assets ./assets
+
+ts-node ~/metaplex/js/packages/cli/src/candy-machine-v2-cli.ts upload \
+    -e devnet \
+    -k ~/.config/solana/devnet.json \
+    -cp config.json \
+    ./assets
+    
