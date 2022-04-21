@@ -1,0 +1,19 @@
+{
+    "name": "Nourishing Emptyness",
+    "symbol": "NOU",
+    "image": "0.png",
+    "properties": {
+        "files": [
+            {
+                "url": "0.png",
+                "type": "image/png"
+            }
+        ],
+        "creators": [
+            {
+                "address": "2peVJLtPqkYq1MgEQsM8LZwTC4uMDyCQSLVU4ijUwLQb",
+                "share": 100
+            }
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Enlightened Strike",
+    "symbol": "ENL",
+    "image": "1.png",
+    "properties": {
+        "files": [
+            {
+                "url": "1.png",
+                "type": "image/png"
+            }
+        ],
+        "creators": [
+            {
+                "address": "2peVJLtPqkYq1MgEQsM8LZwTC4uMDyCQSLVU4ijUwLQb",
+                "share": 100
+            }
+        ]
+    }
+}
